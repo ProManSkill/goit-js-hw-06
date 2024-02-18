@@ -9,16 +9,16 @@ class StringBuilder {
         
     }
     padStart(str) {
-        return this.#value = str + this.#value;
+         this.#value = str + this.#value;
 
         
     }
     padEnd(str) {
-        return this.#value += str;
+         this.#value += str;
 
      }
     padBoth(str) {
-        return this.#value = str + this.#value + str;
+        this.#value = `${ str }${ this.#value }${ str }`;
         
     }
 }
